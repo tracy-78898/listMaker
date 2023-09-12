@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTintMode="src_atop"
@@ -10,25 +10,26 @@
     tools:context=".MainActivity"
     tools:visibility="invisible">
 
+
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabButton"
         android:layout_width="wrap_content"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
         android:clickable="true"
-        android:cropToPadding="true"
         android:foreground="@android:drawable/ic_menu_add"
+
         android:foregroundTint="?attr/colorTertiary"
         android:foregroundTintMode="src_in"
         android:scaleType="matrix"
         android:tintMode="add"
         android:visibility="visible"
         app:backgroundTint="@color/white"
-        app:backgroundTintMode="src_over"
-        app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        tools:visibility="visible"
-        android:contentDescription="TODO" />
+        app:backgroundTintMode="src_over"/>
+
 </FrameLayout>
